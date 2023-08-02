@@ -1,0 +1,91 @@
+/* Styling the TODO app */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #555555;
+  }
+  
+  .input_box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:last-child {
+    background-color: #dc3545;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #12e9db9e;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  .task p {
+    margin: 0;
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .task .crud i {
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.2s ease;
+  }
+  
+  .task .crud i.bi-trash {
+    color: #dc3545;
+  }
+  
+  .task .crud i:hover {
+    color: #0056b3;
+  }

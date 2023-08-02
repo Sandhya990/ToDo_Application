@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App Webpage</title>
+    <!--bs- icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <!-- basic structure of CRUD application: C-create R-retrive U-update D-delete -->
+    <div class="container">
+        <h1>Todo App</h1>
+        <div class="input_box">
+            <input type="text" id="input_val" >
+            <!-- button to add into todo list -->
+            <button class="add" onclick="SaveTask()">Add</button>
+             <!-- button to remove all todo list -->
+            <button onclick="removeAll()">Remove All</button>
+        </div>
+        <!-- rendering the list items into ui dynamically -->
+        <ul class="Task_list">
+            
+        </ul>
+        <!-- script file -->
+        <script src="Todo.js"></script>
+    </div>
+
+</body>
+</html>
